@@ -1,0 +1,113 @@
+﻿PVObject_=pvShdBuilding
+  Comment=Roof_1
+  Version=7.0.17
+  Flags=$02200000
+  NoObjCreated=1
+  ColorSurf=$C0FF
+  DOrigine=0.000,0.000,0.000
+  DInclin=0.0
+
+  ListeObjetsElem, list of=8 TShdObject
+
+    PVObject_1=pvShdElemObject
+      Comment=Isoceles Triangle
+      Version=7.0.17
+      Flags=$02200000
+      NoObjCreated=2
+      ColorSurf=$C0FF
+      DOrigine=14.500,0.000,0.000
+      DInclin=40.0
+      ObjetElemType=oeTriangleIsocele
+      Params=14.500,9.468,0.000,
+    End of PVObject pvShdElemObject
+
+    PVObject_2=pvShdElemObject
+      Comment=Trapeze
+      Version=7.0.17
+      Flags=$02200000
+      NoObjCreated=3
+      ColorSurf=$C0FF
+      DOrigine=0.000,0.000,0.000
+      DInclin=40.0
+      DAzimut=-90.0
+      ObjetElemType=oeTrapeze
+      Params=10.000,10.000,9.468,7.250,0.000,
+    End of PVObject pvShdElemObject
+
+    PVObject_3=pvShdElemObject
+      Comment=Trapeze
+      Version=7.0.17
+      Flags=$02200000
+      NoObjCreated=4
+      ColorSurf=$C0FF
+      DOrigine=14.500,-10.000,0.000
+      DInclin=40.0
+      DAzimut=90.0
+      ObjetElemType=oeTrapeze
+      Params=10.000,10.000,9.468,-7.250,0.000,
+    End of PVObject pvShdElemObject
+
+    PVObject_4=pvShdElemObject
+      Comment=Trapeze
+      Version=7.0.17
+      Flags=$02200000
+      NoObjCreated=5
+      ColorSurf=$C0FF
+      DOrigine=0.000,-10.000,0.000
+      DInclin=40.0
+      ObjetElemType=oeTrapeze
+      Params=8.000,8.000,9.468,-7.250,0.000,
+    End of PVObject pvShdElemObject
+
+    PVObject_5=pvShdElemObject
+      Comment=Trapeze
+      Version=7.0.17
+      Flags=$02200000
+      NoObjCreated=6
+      ColorSurf=$C0FF
+      DOrigine=22.500,-10.000,0.000
+      DInclin=40.0
+      ObjetElemType=oeTrapeze
+      Params=8.000,8.000,9.468,7.250,0.000,
+    End of PVObject pvShdElemObject
+
+    PVObject_6=pvShdElemObject
+      Comment=Isoceles Triangle
+      Version=7.0.17
+      Flags=$02200000
+      NoObjCreated=7
+      ColorSurf=$C0FF
+      DOrigine=22.500,-24.500,0.000
+      DInclin=40.0
+      DAzimut=90.0
+      ObjetElemType=oeTriangleIsocele
+      Params=14.500,9.468,0.000,
+    End of PVObject pvShdElemObject
+
+    PVObject_7=pvShdElemObject
+      Comment=Isoceles Triangle
+      Version=7.0.17
+      Flags=$02200000
+      NoObjCreated=8
+      ColorSurf=$C0FF
+      DOrigine=-8.000,-10.000,0.000
+      DInclin=40.0
+      DAzimut=-90.0
+      ObjetElemType=oeTriangleIsocele
+      Params=14.500,9.468,0.000,
+    End of PVObject pvShdElemObject
+
+    PVObject_8=pvShdElemObject
+      Comment=Trapeze
+      Version=7.0.17
+      Flags=$02200000
+      NoObjCreated=9
+      ColorSurf=$C0FF
+      DOrigine=-8.000,-24.500,0.000
+      DInclin=40.0
+      DAzimut=-180.0
+      ObjetElemType=oeTrapeze
+      Params=30.500,16.000,9.468,7.250,0.000,
+    End of PVObject pvShdElemObject
+  End of ListeObjetsElem
+End of PVObject pvShdBuilding
