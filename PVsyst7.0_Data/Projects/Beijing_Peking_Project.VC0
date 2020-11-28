@@ -1,0 +1,629 @@
+﻿PVObject_=pvVCalcul
+  Comment=New simulation variant
+  Version=7.1.0
+  Flags=$00
+  DateDebS=01/01/90 00:00
+  DateFinS=31/12/90 23:00
+  DateCalcul=28/11/20 11:15
+  VersionSimul=7.1.0
+  SimDuration=4766
+  SystemKindCustom=False
+  SystemKind=Building system
+  PRCorrTemp=False
+
+  PVObject_SiteSimul=pvSite
+    Flags=$0006083F
+    NomF=Beijing/Peking
+    Site=Beijing/Peking
+    Country=China
+    Region=Asia
+    Source=MeteoNorm 7.2 station
+    SourceType=Meteonorm72DB
+    Latitude=39.9300
+    Longitude=116.2800
+    Altitude=55
+    TimeZone=8.00
+    HLeg=True
+    UnitsDisp=kWh_m2_m
+    Albedo=0.20
+    DateBeg=01/01/80 00:00
+    DateEnd=01/01/80 00:00
+    GlobalH=69.2,86.4,123.5,144.8,168.2,157.3,144.3,135.7,117.6,94.3,66.4,54.8,1362.4,
+    DiffuseH=31.2,37.9,59.7,86.3,98.1,99.2,96.0,88.8,65.6,51.7,32.7,27.6,774.7,
+    TAmb=-3.20,0.70,7.50,15.20,21.20,25.10,26.70,25.30,20.20,13.10,4.20,-1.80,12.90,
+    WindVel=3.00,2.80,3.40,3.30,3.00,2.50,2.30,2.10,2.20,2.40,2.60,2.90,2.70,
+    Linke=4.300,4.100,4.400,6.200,6.600,6.900,6.600,5.300,5.500,5.400,4.300,4.000,5.300,
+    RelHum=0.425,0.412,0.341,0.410,0.470,0.585,0.719,0.744,0.678,0.569,0.517,0.426,0.525,
+    Extraterr=132.8,162.9,238.1,289.8,341.8,348.1,351.8,317.8,254.4,200.8,141.1,119.3,2898.7,
+  End of PVObject pvSite
+
+  PVObject_MeteoSimul=pvMeteo
+    Flags=$8423
+    NomF=Beijing_Peking_MN72_SYN.MET
+    SiteM=Beijing/Peking
+    SourceM=MeteoNorm 7.2 station
+    TypeM=Synthetic
+    NomFSource=PVsyst internal file
+    NomFormat=PVsyst database .CSV format
+    DateFormat=22/11/20 13:28
+    DateDebF=01/01/90 00:00
+    DateFinF=31/12/90 23:00
+    IsSourceUt=False
+    HourShift=0
+    TimeShift=0
+    TimeShiftImported=0
+    PasAccum=60
+    FirstRandomSeed=1
+
+    PVObject_SiteMet=pvSite
+      Comment=Beijing/Peking;China;Asia;
+      Version=7.1.0
+      Flags=$0006283F
+      NomF=Beijing/Peking
+      Site=Beijing/Peking
+      Country=China
+      Region=Asia
+      Source=MeteoNorm 7.2 station
+      SourceType=Meteonorm72DB
+      Latitude=39.9300
+      Longitude=116.2800
+      Altitude=55
+      TimeZone=8.00
+      HLeg=True
+      UnitsDisp=kWh_m2_m
+      Albedo=0.20
+      DateBeg=01/01/91 00:00
+      DateEnd=01/01/80 00:00
+      GlobalH=69.2,86.4,123.5,144.8,168.2,157.3,144.3,135.7,117.6,94.3,66.4,54.8,1362.5,
+      DiffuseH=31.2,37.9,59.7,86.3,98.1,99.2,96.0,88.8,65.6,51.7,32.7,27.6,774.8,
+      TAmb=-3.20,0.70,7.50,15.20,21.20,25.10,26.70,25.30,20.20,13.10,4.20,-1.80,12.91,
+      WindVel=3.00,2.80,3.40,3.30,3.00,2.50,2.30,2.10,2.20,2.40,2.60,2.90,2.71,
+      Linke=4.748,6.100,6.456,7.411,7.939,8.620,8.464,8.135,7.239,7.357,5.569,4.890,6.914,
+      RelHum=0.429,0.410,0.354,0.410,0.471,0.587,0.705,0.740,0.709,0.596,0.522,0.455,0.533,
+      Extraterr=132.8,162.9,238.1,289.8,341.8,348.1,351.8,317.8,254.4,200.8,141.1,119.3,2898.7,
+      YrToYrVar=8.300
+    End of PVObject pvSite
+  End of PVObject pvMeteo
+
+  PVObject_EnIncidente=pvEnIncid
+    Flags=$2020
+    PVObject_PlanCapteurs=pvCollPlane
+      Flags=$2080
+      FieldType=FixedPlane
+      IsDefined=True
+      TranspositionAlgorithm=CircSolSeparate
+      InclPlR=40.0
+      AzimPlR=20.0
+    End of PVObject pvCollPlane
+  End of PVObject pvEnIncid
+
+  PVObject_PVMainArray=pvMainArray
+    Flags=$00100000
+    Flags2=$082A
+    UFactor=20.0
+    Alpha=0.9
+    UFAverEffic=18.7
+    SoilingLoss=0.000
+    UseSpectralCorr=False
+    SubArrays=Start
+      PVObject_=pvSubArray
+        Comment=South Triangle
+        Version=7.1.0
+        Flags=$001F2005
+        Flags2=$0020
+        SubArrayId=2
+        PVModule=Canadian_CS3K-315MS_1500V.PAN
+        GInverter=Enphase_IQ7PLUS_72_INT.OND
+        NModSerie=1
+        NStringCh=18
+        NoOrientation=1
+        NInverter=17
+        NInvMPPT=1
+        AreaSizing=35.0
+        PNomSizing=6.6
+        PowerSharingInverterId=-1
+        PNomAC_InMPPT=0.29
+        PQualityModU=3.00
+        PQualityModI=3.00
+        PQualityModP=3.00
+        PMismMPP=2.00
+        PMismUFixe=2.50
+        PMismString=0.10
+        LIDLoss=0.00
+        LightSoaking=0.00
+        RSCablageCh=2.894
+        RSCablagePC=1.50
+        VDiodeSerie=0.00
+        PVObject_IAM=pvIAM
+          Flags=$00
+          IAMMode=UserProfile
+          IAMProfile=TCubicProfile
+            NPtsMax=9
+            NPtsEff=9
+            LastCompile=$B18D
+            Mode=3
+            Point_1=10.0,1.00000
+            Point_2=20.0,1.00000
+            Point_3=30.0,1.00000
+            Point_4=40.0,0.99000
+            Point_5=50.0,0.99000
+            Point_6=60.0,0.97000
+            Point_7=70.0,0.92000
+            Point_8=80.0,0.76000
+            Point_9=90.0,0.00000
+          End of TCubicProfile
+        End of PVObject pvIAM
+      End of PVObject pvSubArray
+    EndTags
+  End of PVObject pvMainArray
+
+  PVObject_System=pvSystem
+    Flags=$00
+    SystemType=Grid
+  End of PVObject pvSystem
+
+  PVObject_Ombrage=pvShading
+    Comment=Prab's Roof
+    Flags=$20200100
+    NOrient_Shd=1
+    Precision=1
+    FracOmbreMod=1.000
+    FracOmbreThin=0.400
+    OrientTolerance=1.0
+    GCROffset=1.0
+
+    ListeObjets, list of=6 TShdObject
+
+      PVObject_1=pvShdArrayPoly
+        Comment=Object 5, face
+        Version=7.1.0
+        Flags=$02200004
+        NoObjCreated=2
+        ColorTechn=$00FF0000
+        ColorSurf=$00FF9999
+        ColorBord=$00505050
+        DOrigine=-2.715,-4.609,5.278
+        DInclin=40.0
+        DAzimut=20.0
+      NElemChamps=1
+      NoOrient=-1
+        CellMargin=0.150
+        Sommets2D, TPoly2D=3 Point2D
+          Point_1=0.000,0.000
+          Point_2=-5.398,-7.046
+          Point_3=5.398,-7.046
+        End of TPoly2D
+      End of PVObject pvShdArrayPoly
+
+      PVObject_2=pvShdArrayPoly
+        Comment=Object 6, face
+        Version=7.1.0
+        Flags=$02200004
+        NoObjCreated=3
+        ColorTechn=$00FF0000
+        ColorSurf=$00FF9999
+        ColorBord=$00505050
+        DOrigine=-13.383,-11.848,5.657
+        DInclin=40.0
+        DAzimut=20.0
+      NElemChamps=1
+      NoOrient=-1
+        CellMargin=0.150
+        Sommets2D, TPoly2D=4 Point2D
+          Point_1=0.000,0.000
+          Point_2=-5.696,0.000
+          Point_3=0.153,-7.635
+          Point_4=5.849,-7.635
+        End of TPoly2D
+      End of PVObject pvShdArrayPoly
+
+      PVObject_3=pvShdArrayPoly
+        Comment=Object 9, face
+        Version=7.1.0
+        Flags=$02200004
+        NoObjCreated=6
+        ColorTechn=$00FF0000
+        ColorSurf=$00FF9999
+        ColorBord=$00505050
+        DOrigine=0.803,-17.012,5.657
+        DInclin=40.0
+        DAzimut=20.0
+      NElemChamps=1
+      NoOrient=-1
+        CellMargin=0.150
+        Sommets2D, TPoly2D=4 Point2D
+          Point_1=0.000,0.000
+          Point_2=-5.849,-7.635
+          Point_3=-0.153,-7.635
+          Point_4=5.696,0.000
+        End of TPoly2D
+      End of PVObject pvShdArrayPoly
+
+      PVObject_4=pvShdGenObject
+        Comment=Object 1
+        Version=7.1.0
+        Flags=$02200006
+        NoObjCreated=8
+        NPElements=47
+        NElements=9
+        ColorSurf=$00FFFFFF
+        DOrigine=-10.909,-5.923,0.000
+        DInclin=0.0
+        DAzimut=-160.0
+        Sommets, TPoly3D=16 Point3D
+          Point_1=0.000,0.000,0.000
+          Point_2=-7.250,7.250,6.083
+          Point_3=0.750,7.250,6.083
+          Point_4=8.000,0.000,0.000
+          Point_5=0.000,-10.000,0.000
+          Point_6=-7.250,-2.750,6.083
+          Point_7=8.000,14.500,0.000
+          Point_8=-2.550,9.100,4.531
+          Point_9=-1.750,9.100,4.531
+          Point_10=-1.750,10.800,3.105
+          Point_11=-15.250,7.250,6.083
+          Point_12=-22.500,14.500,0.000
+          Point_13=-2.550,10.800,3.105
+          Point_14=-14.500,-10.000,0.000
+          Point_15=-14.500,0.000,0.000
+          Point_16=-22.500,0.000,0.000
+        End of TPoly3D
+        Faces=-1,2,1,0,3,-1,1,5,4,0,-1,2,3,6,-1,7,12,6,11,10,1,2,9,8,-1,12,9,2,6,-1,5,13,4,-1,14,13,5,1,-1,11,15,10,-1,10,15,14,1,
+      End of PVObject pvShdGenObject
+
+      PVObject_5=pvShdGenObject
+        Comment=Object 2
+        Version=7.1.0
+        Flags=$02200006
+        NoObjCreated=9
+        NPElements=41
+        NElements=7
+        ColorSurf=$00FFFFFF
+        DOrigine=-5.050,-6.725,6.583
+        DInclin=0.0
+        DAzimut=-160.0
+        Sommets, TPoly3D=12 Point3D
+          Point_1=0.000,0.000,0.000
+          Point_2=-0.800,0.000,0.000
+          Point_3=-0.800,1.700,0.000
+          Point_4=0.000,1.700,0.000
+          Point_5=-0.800,0.000,-1.062
+          Point_6=-0.800,1.700,-1.062
+          Point_7=0.000,0.000,-1.472
+          Point_8=0.000,0.000,-1.733
+          Point_9=-0.770,0.000,-1.088
+          Point_10=0.000,1.700,-1.733
+          Point_11=0.000,1.700,-1.472
+          Point_12=-0.770,1.700,-1.088
+        End of TPoly3D
+        Faces=-1,2,1,0,3,-1,4,1,2,5,-1,8,7,6,0,1,4,-1,6,7,9,3,0,-1,9,10,3,-1,10,9,11,5,2,3,-1,5,4,8,7,9,11,
+      End of PVObject pvShdGenObject
+
+      PVObject_6=pvShdGenObject
+        Comment=Object 3
+        Version=7.1.0
+        Flags=$02200006
+        NoObjCreated=10
+        NPElements=25
+        NElements=5
+        ColorSurf=$00FFFFFF
+        DOrigine=-12.206,-16.943,6.583
+        DInclin=0.0
+        DAzimut=-160.0
+        Sommets, TPoly3D=8 Point3D
+          Point_1=0.000,0.000,0.000
+          Point_2=0.000,-1.700,0.000
+          Point_3=0.000,-1.700,-2.052
+          Point_4=0.000,0.000,-3.479
+          Point_5=0.800,-1.700,0.000
+          Point_6=0.800,-1.700,-2.052
+          Point_7=0.800,0.000,0.000
+          Point_8=0.800,0.000,-3.479
+        End of TPoly3D
+        Faces=-1,2,1,0,3,-1,2,5,4,1,-1,0,1,4,6,-1,7,3,0,6,-1,4,5,7,6,
+      End of PVObject pvShdGenObject
+    End of ListeObjets
+
+    ObjectsGroups, list of=8 TGroupeObjetsOmbrage
+      ObjectsGroup=1
+        PVObject_=pvShdObjectGroup
+          Comment=Roof2.dae
+          Version=7.1.0
+          Flags=$00
+        End of PVObject pvShdObjectGroup
+      ObjectsGroup=2
+        PVObject_=pvShdObjectGroup
+          Comment=Roof7.dae
+          Version=7.1.0
+          Flags=$00
+        End of PVObject pvShdObjectGroup
+      ObjectsGroup=3
+        PVObject_=pvShdObjectGroup
+          Comment=Roof7.dae
+          Version=7.1.0
+          Flags=$00
+        End of PVObject pvShdObjectGroup
+      ObjectsGroup=4
+        PVObject_=pvShdObjectGroup
+          Comment=Roof7.dae
+          Version=7.1.0
+          Flags=$00
+        End of PVObject pvShdObjectGroup
+      ObjectsGroup=5
+        PVObject_=pvShdObjectGroup
+          Comment=Roof7.dae
+          Version=7.1.0
+          Flags=$00
+        End of PVObject pvShdObjectGroup
+      ObjectsGroup=6
+        PVObject_=pvShdObjectGroup
+          Comment=Roof7.dae
+          Version=7.1.0
+          Flags=$00
+        End of PVObject pvShdObjectGroup
+      ObjectsGroup=7
+        PVObject_=pvShdObjectGroup
+          Comment=roof8.dae
+          Version=7.1.0
+          Flags=$00
+        End of PVObject pvShdObjectGroup
+      ObjectsGroup=8
+        PVObject_=pvShdObjectGroup
+          Comment=roof8.dae
+          Version=7.1.0
+          Flags=$00
+          Objects=2,3,6,8,9,10,
+        End of PVObject pvShdObjectGroup
+    End of List ObjectsGroups
+  End of PVObject pvShading
+  SimulPlots=Start
+    PVObject_=pvSimulPlot
+      Comment=Reference Incident Energy in Collector Plane
+      Version=7.1.0
+      Flags=$000E
+      PlotType=VarNorm
+      VarAccP=Day
+      VarX=GlobInc
+      VarY=EArray
+      VarZ=E_Grid
+      VarU=EUnused
+      UnitX=kWh_m2_d
+      UnitY=kWh_d
+      PlotDefault=YR
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=20.0000
+      SeuilAcc=5.0000
+      NValRes=365
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Normalized productions (per installed kWp)
+      Version=7.1.0
+      Flags=$000E
+      PlotType=VarNorm
+      VarAccP=Day
+      VarX=GlobInc
+      VarY=EArray
+      VarZ=E_Grid
+      VarU=EUnused
+      UnitX=kWh_m2_d
+      UnitY=kWh_d
+      PlotDefault=NormProd
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=20.0000
+      SeuilAcc=5.0000
+      NValRes=365
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Normalized Production and Loss Factors
+      Version=7.1.0
+      Flags=$000E
+      PlotType=VarNorm
+      VarAccP=Day
+      VarX=GlobInc
+      VarY=EArray
+      VarZ=E_Grid
+      VarU=EUnused
+      UnitX=kWh_m2_d
+      UnitY=kWh_d
+      PlotDefault=NormLoss
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=20.0000
+      SeuilAcc=5.0000
+      NValRes=365
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Performance Ratio PR
+      Version=7.1.0
+      Flags=$000E
+      PlotType=VarNorm
+      VarAccP=Day
+      VarX=GlobInc
+      VarY=E_Load
+      VarZ=E_Grid
+      VarU=EUnused
+      UnitX=kWh_m2_d
+      UnitY=kWh_d
+      PlotDefault=PR
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=20.0000
+      SeuilAcc=5.0000
+      NValRes=365
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Incident Irradiation Distribution
+      Version=7.1.0
+      Flags=$000E
+      PlotType=Histo
+      VarAccP=Hour
+      VarX=GlobInc
+      VarY=GlobInc
+      UnitX=W_m2
+      UnitY=kWh_m2
+      PlotDefault=DistrIrrad
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=20.0000
+      SeuilAcc=5.0000
+      NValRes=60
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Incident Irradiation Tail Distribution
+      Version=7.1.0
+      Flags=$000E
+      PlotType=HistoClass
+      VarAccP=Hour
+      VarX=GlobInc
+      VarY=GlobInc
+      UnitX=W_m2
+      UnitY=kWh_m2
+      PlotDefault=ClassIrradH
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=5.0000
+      SeuilAcc=5.0000
+      NValRes=240
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Array Temperature vs. Effective Irradiance
+      Version=7.1.0
+      Flags=$000E
+      PlotType=Scatter
+      VarAccP=Hour
+      VarX=GlobEff
+      VarY=TArray
+      UnitX=W_m2
+      UnitY=DegC
+      PlotDefault=TArrayvsGlobEff
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=1.0000
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Daily Input/Output diagram
+      Version=7.1.0
+      Flags=$000E
+      PlotType=Scatter
+      VarAccP=Day
+      VarX=GlobInc
+      VarY=E_Grid
+      UnitX=kWh_m2_d
+      UnitY=kWh_d
+      PlotDefault=I_O
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=20.0000
+      SeuilAcc=5.0000
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Daily System Output Energy
+      Version=7.1.0
+      Flags=$000E
+      PlotType=TimeEvol
+      VarAccP=Day
+      VarY=E_Grid
+      UnitY=kWh_d
+      PlotDefault=ESystDay
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=1.0000
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Array Power Distribution
+      Version=7.1.0
+      Flags=$000E
+      PlotType=Histo
+      VarAccP=Hour
+      VarX=EArray
+      VarY=EArray
+      UnitX=kW
+      UnitY=kWh
+      PlotDefault=DistrEArray
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=0.0500
+      NValRes=200
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=System Output Power Distribution
+      Version=7.1.0
+      Flags=$0002
+      PlotType=Histo
+      VarAccP=Hour
+      VarX=E_Grid
+      VarY=E_Grid
+      UnitX=kW
+      UnitY=kWh
+      PlotDefault=DistrESyst
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=0.0500
+      NValRes=200
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=System Output Power Tail Distribution
+      Version=7.1.0
+      Flags=$0002
+      PlotType=HistoClass
+      VarAccP=Hour
+      VarX=E_Grid
+      VarY=E_Grid
+      UnitX=kW
+      UnitY=kWh
+      PlotDefault=ClassESystH
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=0.0250
+      NValRes=400
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Array Voltage Distribution
+      Version=7.1.0
+      Flags=$0006
+      PlotType=Histo
+      VarAccP=Hour
+      VarX=UArray
+      UnitX=V
+      UnitY=Hour
+      PlotDefault=DistrVArray
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinDeb=10.0000
+      BinLarg=0.2000
+      SeuilAcc=1.0000
+      NValRes=250
+    End of PVObject pvSimulPlot
+    PVObject_=pvSimulPlot
+      Comment=Array Temperature Distribution during running
+      Version=7.1.0
+      Flags=$0006
+      PlotType=Histo
+      VarAccP=Hour
+      VarX=TArray
+      UnitX=DegC
+      UnitY=Hour
+      PlotDefault=DistrTArray
+      DateDebP=01/01/90 00:00
+      DateFinP=31/12/90 23:00
+      ShowOnReport=False
+      BinLarg=1.0000
+      NValRes=100
+    End of PVObject pvSimulPlot
+  EndTags
+End of PVObject pvVCalcul

@@ -1,0 +1,13 @@
+﻿PVObject_=pvClient
+  Comment=University of Calgary
+  Version=7.0.17
+  Flags=$00
+  Person=Anis Haque
+  Address=2500 University Dr NW, Calgary, AB
+  City=Calgary
+  Zipcode=T2N 1N4
+  Country=Canada
+  Telephone=(403) 220-4952
+  E_mail=sahaque@ucalgary.ca
+  URL_Addr=https://people.ucalgary.ca/~anis/
+End of PVObject pvClient
