@@ -1,6 +1,6 @@
 ﻿PVObject_=pvProject
   Comment=MPSRSolar_ENEL562FinalProject
-  Version=7.0.17
+  Version=7.1.0
   Flags=$00080010
   PVObject_Client=pvClient
     Comment=Anis Haque

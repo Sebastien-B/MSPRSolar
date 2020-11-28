@@ -1,0 +1,291 @@
+﻿PVObject_=pvShading
+  Comment=New shading scene
+  Version=7.1.0
+  Flags=$0100
+  NOrient_Shd=3
+  Precision=1
+  FracOmbreMod=1.000
+  FracOmbreThin=0.400
+  OrientTolerance=1.0
+  GCROffset=1.0
+
+  ListeObjets, list of=10 TShdObject
+
+    PVObject_1=pvShdArrayPoly
+      Comment=Object 2, face #1
+      Version=7.1.0
+      Flags=$02200000
+      NoObjCreated=1
+      ColorTechn=$00FF0000
+      ColorSurf=$00FF9999
+      ColorBord=$00505050
+      DOrigine=4.729,-8.204,5.125
+      DInclin=40.0
+      DAzimut=20.0
+    NElemChamps=1
+    NoOrient=-1
+      CellMargin=0.150
+      Sommets2D, TPoly2D=3 Point2D
+        Point_1=0.000,0.000
+        Point_2=-5.398,-7.046
+        Point_3=5.398,-7.046
+      End of TPoly2D
+    End of PVObject pvShdArrayPoly
+
+    PVObject_2=pvShdArrayPoly
+      Comment=Object 3, face #1
+      Version=7.1.0
+      Flags=$02200000
+      NoObjCreated=2
+      ColorTechn=$00FF0000
+      ColorSurf=$00FF9999
+      ColorBord=$00505050
+      DOrigine=-5.939,-15.443,5.503
+      DInclin=40.0
+      DAzimut=20.0
+    NElemChamps=1
+    NoOrient=-1
+      CellMargin=0.150
+      Sommets2D, TPoly2D=4 Point2D
+        Point_1=0.000,0.000
+        Point_2=-5.696,0.000
+        Point_3=0.153,-7.635
+        Point_4=5.849,-7.635
+      End of TPoly2D
+    End of PVObject pvShdArrayPoly
+
+    PVObject_3=pvShdArrayPoly
+      Comment=Object 4, face #1
+      Version=7.1.0
+      Flags=$02200000
+      NoObjCreated=3
+      ColorTechn=$00FF0000
+      ColorSurf=$00FF9999
+      ColorBord=$00505050
+      DOrigine=-7.693,-15.557,5.125
+      DInclin=40.0
+      DAzimut=-70.0
+    NElemChamps=1
+    NoOrient=-1
+      CellMargin=0.150
+      Sommets2D, TPoly2D=3 Point2D
+        Point_1=0.000,0.000
+        Point_2=-5.398,-7.046
+        Point_3=5.398,-7.046
+      End of TPoly2D
+    End of PVObject pvShdArrayPoly
+
+    PVObject_4=pvShdArrayPoly
+      Comment=Object 5, face #1
+      Version=7.1.0
+      Flags=$02200000
+      NoObjCreated=4
+      ColorTechn=$00FF0000
+      ColorSurf=$00FF9999
+      ColorBord=$00505050
+      DOrigine=8.248,-20.607,5.503
+      DInclin=40.0
+      DAzimut=20.0
+    NElemChamps=1
+    NoOrient=-1
+      CellMargin=0.150
+      Sommets2D, TPoly2D=4 Point2D
+        Point_1=0.000,0.000
+        Point_2=-5.849,-7.635
+        Point_3=-0.153,-7.635
+        Point_4=5.696,0.000
+      End of TPoly2D
+    End of PVObject pvShdArrayPoly
+
+    PVObject_5=pvShdArrayPoly
+      Comment=Object 6, face #1
+      Version=7.1.0
+      Flags=$02200000
+      NoObjCreated=5
+      ColorTechn=$00FF0000
+      ColorSurf=$00FF9999
+      ColorBord=$00505050
+      DOrigine=9.708,-13.695,0.595
+      DInclin=40.0
+      DAzimut=110.0
+    NElemChamps=1
+    NoOrient=-1
+      CellMargin=0.150
+      Sommets2D, TPoly2D=4 Point2D
+        Point_1=0.000,0.000
+        Point_2=7.696,0.000
+        Point_3=1.847,7.635
+        Point_4=-5.849,7.635
+      End of TPoly2D
+    End of PVObject pvShdArrayPoly
+
+    PVObject_6=pvShdArrayPoly
+      Comment=Object 7, face #1
+      Version=7.1.0
+      Flags=$02200000
+      NoObjCreated=6
+      ColorTechn=$00FF0000
+      ColorSurf=$00FF9999
+      ColorBord=$00505050
+      DOrigine=12.745,-28.740,0.595
+      DInclin=40.0
+      DAzimut=110.0
+    NElemChamps=1
+    NoOrient=-1
+      CellMargin=0.150
+      Sommets2D, TPoly2D=3 Point2D
+        Point_1=0.000,0.000
+        Point_2=10.795,0.000
+        Point_3=5.398,7.046
+      End of TPoly2D
+    End of PVObject pvShdArrayPoly
+
+    PVObject_7=pvShdArrayPoly
+      Comment=Object 10, face #1
+      Version=7.1.0
+      Flags=$02200000
+      NoObjCreated=7
+      ColorTechn=$00FF0000
+      ColorSurf=$00FF9999
+      ColorBord=$00505050
+      DOrigine=3.156,-10.460,5.503
+      DInclin=40.0
+      DAzimut=-70.0
+    NElemChamps=1
+    NoOrient=-1
+      CellMargin=0.150
+      Sommets2D, TPoly2D=8 Point2D
+        Point_1=0.000,0.000
+        Point_2=-1.049,0.000
+        Point_3=-6.898,-7.635
+        Point_4=0.799,-7.635
+        Point_5=6.648,0.000
+        Point_6=1.700,0.000
+        Point_7=1.700,-1.005
+        Point_8=0.000,-1.005
+      End of TPoly2D
+    End of PVObject pvShdArrayPoly
+
+    PVObject_8=pvShdGenObject
+      Comment=Object 1
+      Version=7.1.0
+      Flags=$02200002
+      NoObjCreated=8
+      NPElements=111
+      NElements=16
+      ColorSurf=$00FFFFFF
+      DOrigine=-3.420,-9.397,0.000
+      DInclin=0.0
+      DAzimut=-160.0
+      Sommets, TPoly3D=45 Point3D
+        Point_1=0.000,0.000,0.000
+        Point_2=-7.250,7.250,6.083
+        Point_3=-5.398,6.550,5.496
+        Point_4=0.451,0.700,0.588
+        Point_5=8.000,0.000,0.000
+        Point_6=6.148,0.700,0.588
+        Point_7=0.750,7.250,6.083
+        Point_8=0.299,6.550,5.496
+        Point_9=-7.250,-2.750,6.083
+        Point_10=-6.550,-2.299,5.496
+        Point_11=0.000,-10.000,0.000
+        Point_12=-6.580,-1.250,5.521
+        Point_13=-0.700,-8.148,0.588
+        Point_14=-6.550,5.398,5.496
+        Point_15=-6.580,0.450,5.521
+        Point_16=-6.550,0.450,5.496
+        Point_17=-0.700,-0.451,0.588
+        Point_18=-6.550,-1.250,5.496
+        Point_19=1.902,7.250,5.117
+        Point_20=7.300,1.852,0.588
+        Point_21=7.300,12.648,0.588
+        Point_22=8.000,14.500,0.000
+        Point_23=-2.550,9.100,4.531
+        Point_24=-1.750,9.100,4.531
+        Point_25=-1.750,10.800,3.105
+        Point_26=-15.250,7.250,6.083
+        Point_27=-22.500,14.500,0.000
+        Point_28=-2.550,10.800,3.105
+        Point_29=-14.500,-10.000,0.000
+        Point_30=-12.648,-9.300,0.588
+        Point_31=-1.852,-9.300,0.588
+        Point_32=-7.250,-3.902,5.117
+        Point_33=-14.500,0.000,0.000
+        Point_34=-13.800,-8.148,0.588
+        Point_35=-7.950,-2.299,5.496
+        Point_36=-7.950,5.398,5.496
+        Point_37=-13.800,-0.451,0.588
+        Point_38=-22.500,0.000,0.000
+        Point_39=-21.800,1.852,0.588
+        Point_40=-16.402,7.250,5.117
+        Point_41=-21.800,12.648,0.588
+        Point_42=-20.648,0.700,0.588
+        Point_43=-14.951,0.700,0.588
+        Point_44=-9.102,6.550,5.496
+        Point_45=-14.799,6.550,5.496
+      End of TPoly3D
+      Faces=-1,2,7,6,1,0,4,5,3,-1,7,5,4,6,-1,9,17,11,14,15,13,16,0,1,8,10,12,-1,16,12,10,0,-1,18,20,21,6,4,19,-1,4,21,20,19,-1,22,27,21,26,25,1,6,24,23,-1,27,24,6,21,-1,29,31,8,28,10,30,-1,31,30,10,8,-1,33,36,1,32,28,8,35,34,-1,36,35,8,1,-1,38,40,26,37,25,39,-1,40,39,25,26,-1,41,44,25,contd,
+      Faces_contd=37,32,1,43,42,-1,44,43,1,25,
+    End of PVObject pvShdGenObject
+
+    PVObject_9=pvShdGenObject
+      Comment=Object 8
+      Version=7.1.0
+      Flags=$02200002
+      NoObjCreated=9
+      NPElements=34
+      NElements=6
+      ColorSurf=$00FFFFFF
+      DOrigine=2.439,-10.199,6.583
+      DInclin=0.0
+      DAzimut=-160.0
+      Sommets, TPoly3D=10 Point3D
+        Point_1=0.000,0.000,0.000
+        Point_2=-0.800,0.000,0.000
+        Point_3=-0.800,1.700,0.000
+        Point_4=0.000,1.700,0.000
+        Point_5=-0.800,0.000,-1.062
+        Point_6=-0.800,1.700,-1.062
+        Point_7=0.000,0.000,-1.733
+        Point_8=-0.770,0.000,-1.088
+        Point_9=0.000,1.700,-1.733
+        Point_10=-0.770,1.700,-1.088
+      End of TPoly3D
+      Faces=-1,2,1,0,3,-1,4,1,2,5,-1,7,6,0,1,4,-1,0,6,8,3,-1,3,8,9,5,2,-1,5,4,7,6,8,9,
+    End of PVObject pvShdGenObject
+
+    PVObject_10=pvShdGenObject
+      Comment=Object 9
+      Version=7.1.0
+      Flags=$02200002
+      NoObjCreated=10
+      NPElements=25
+      NElements=5
+      ColorSurf=$00FFFFFF
+      DOrigine=-4.718,-20.418,6.583
+      DInclin=0.0
+      DAzimut=-160.0
+      Sommets, TPoly3D=8 Point3D
+        Point_1=0.000,0.000,0.000
+        Point_2=0.000,-1.700,0.000
+        Point_3=0.000,-1.700,-2.052
+        Point_4=0.000,0.000,-3.479
+        Point_5=0.800,-1.700,0.000
+        Point_6=0.800,-1.700,-2.052
+        Point_7=0.800,0.000,0.000
+        Point_8=0.800,0.000,-3.479
+      End of TPoly3D
+      Faces=-1,2,1,0,3,-1,2,5,4,1,-1,0,1,4,6,-1,7,3,0,6,-1,4,5,7,6,
+    End of PVObject pvShdGenObject
+  End of ListeObjets
+
+  ObjectsGroups, list of=1 TGroupeObjetsOmbrage
+    ObjectsGroup=1
+      PVObject_=pvShdObjectGroup
+        Comment=Roof6.dae
+        Version=7.1.0
+        Flags=$00
+        Objects=1,2,3,4,5,6,7,8,9,10,
+      End of PVObject pvShdObjectGroup
+  End of List ObjectsGroups
+End of PVObject pvShading
