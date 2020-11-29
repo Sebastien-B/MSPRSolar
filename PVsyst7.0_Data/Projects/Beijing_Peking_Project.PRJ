@@ -1,13 +1,13 @@
 ﻿PVObject_=pvProject
   Comment=MPSRSolar_ENEL562FinalProject
-  Version=7.0.17
+  Version=7.1.0
   Flags=$00080010
   PVObject_Client=pvClient
     Comment=Anis Haque
     Flags=$00
   End of PVObject pvClient
   MeteoFileName=Beijing_Peking_MN72_SYN.MET
-  MeteoFileDate=22/11/20 13:28
+  MeteoFileDate=25/11/20 19:15
   PVObject_SitePrj=pvSite
     Comment=Beijing/Peking;China;Asia;
     Flags=$0006083F
